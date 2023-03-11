@@ -25,6 +25,7 @@ $prev_img_cnt..($final_img_cnt - 1) | ForEach-Object -Parallel {
 } -ThrottleLimit 15
 
 Write-Output $final_img_cnt > ("category_" + $rating_int + "_image_count.txt")
+Write-Output ("Final image count: " + $final_img_cnt + ".")
 
 Set-Location ".."
 
